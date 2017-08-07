@@ -33,15 +33,24 @@ nav ul { list-style-type: none;
           padding: 0;
 }
 nav a { text-decoration: none;
-         display: block;
-	     padding: 20px;
-         background-color: #b3c7e6;
-	     border-bottom: 1px solid #ffffff;
+        display: block;
+	      padding: 20px;
+        background-color: #b3c7e6;
+	      border-bottom: 1px solid #ffffff;
+
+        background-image: url("sprites.gif");
+        background-repeat: no-repeat;
+        background-position: right -0px; /* -0px configures display at an offset
+                                              of 0 pixels down from the top (1st lighthouse in image)*/
 }
 nav a:link    { color: #ffffff;  }
 nav a:visited { color: #eaeaea; }
 nav a:hover   { background-color: #eaeaea;
-                 color: #869dc7; }
+                color: #869dc7;
+
+                background-position: right -100px;  /* -100px configures display at an offset
+                                                      of 100 pixels down from the top (2nd lighthouse in image)*/
+              }
 main { background-color: #ffffff;
            color: #000000;
 		   padding: 10px 20px;
